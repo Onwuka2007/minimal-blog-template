@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header-section {
+  width: 100%;
+  padding: 20px 0;
+  box-shadow: 0px 4px 70px rgba(30, 40, 52, 0.1);
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+}
+#header-section img {
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 45px;
+  align-items: center;
+}
+nav ul li {
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: 0.3s ease-in-out;
+}
+nav ul li:hover {
+  color: brown;
+}
+nav ul li button {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+nav ul li button:hover {
+  background-color: #b62828;
+}
+.hamburger {
+  display: none;
+}
+
+/* first section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 140px auto 70px;
+  text-align: center;
+  width: 80%;
+}
+.meet-personally-img {
+  background-color: rgba(196, 242, 242, 0.5);
+  width: fit-content;
+  padding: 8px 10px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.hero-section h1 {
+  background: linear-gradient(97.1deg, #c41740 4.8%, #ea9c28 100%);
+  background-clip: text;
+  color: transparent;
+  font-size: 76px;
+  font-weight: 700;
+  margin: 30px 0 15px 0;
+}
+
+.hero-section p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* second section */
+.first-content-section {
+  background-color: rgba(88, 102, 102, 0.1);
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.second-container {
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.first-content-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.first-content-section-header h3 {
+  font-family: "poppins", sans-serif;
+  font-size: 1.2rem;
+}
+.first-content-section-header button {
+  border: none;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.first-content-section-header button:hover {
+  background-color: #ffffffaa;
+}
+
+.actual-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 40px 20px;
+  width: fit-content;
+  font-family: "poppins", sans-serif;
+  gap: 20px;
+}
+
+.actual-content img {
+  width: 30%;
+  max-width: 250px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.actual-content img:hover {
+  backdrop-filter: blur(7px);
+}
+
+.actual-content div {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.paragraph {
+  font-weight: 300;
+  font-size: 14px;
+}
+.date {
+  font-weight: 200;
+  font-size: 12px;
+}
+.actual-content button {
+  border: none;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: black;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  margin-top: 10px;
+}
+.actual-content button:hover {
+  background-color: #b62828;
+}
+
+footer {
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  padding: 2rem 5rem;
+}
+.footer-description h2 {
+  background: linear-gradient(97.1deg, #c41740 4.8%, #ea9c28 100%);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 10px;
+}
+.footer-description p {
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.form button {
+  border: none;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: black;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+hr {
+  margin: 30px 0;
+}
+
+.form input {
+  padding: 7px;
+}
+.form button:hover {
+  background-color: #b62828;
+}
+.copyright {
+  font-weight: 200;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger i {
+    font-size: 1.1rem;
+  }
+
+  .actual-content {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .actual-content img,
+  .actual-content div {
+    width: 100%;
+  }
+  .actual-content img {
+    width: 100%;
+    max-width: 500px;
+  }
+}
